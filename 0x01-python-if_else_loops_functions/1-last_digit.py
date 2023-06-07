@@ -4,9 +4,10 @@ number = random.randint(-10000, 10000)
 value = abs(number) % 10
 if number < 0:
     value = -value
+print("Last digit of {} is {} and is".format(number, value), end = " ")
 if value > 5:
-    print("Last digit of {} is {} {}".format(number, value, "and is greater than 5"))
+    print("greater than 5")
 elif value == 0:
-    print("Last digit of {} is {} {}".format(number, value, "and is 0"))
+    print("0")
 else:
-    print("Last digit of {} is {} {}".format(number, value, "and is less than 6 and not 0"))
+    print("less than 6 and not 0")
