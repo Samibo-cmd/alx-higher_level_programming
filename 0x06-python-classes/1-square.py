@@ -6,4 +6,4 @@ class Square:
     """This is a class of square"""
     def __init__(self, size):
         """Initialise new argument named size"""
-        self._size = size
+        self.__size = size
