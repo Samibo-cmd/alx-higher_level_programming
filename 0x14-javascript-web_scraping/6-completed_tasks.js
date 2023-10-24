@@ -9,9 +9,9 @@ request(process.argv[2], function (err, _res, body) {
     const completedTasksByUsers = {};
     body = JSON.parse(body);
 
-    for (let i = 0; i < body.length; ++i) {
-      const userId = body[i].userId;
-      const completed = body[i].completed;
+    for (let p = 0; p < body.length; ++p) {
+      const userId = body[p].userId;
+      const completed = body[p].completed;
 
       if (completed && !completedTasksByUsers[userId]) {
         completedTasksByUsers[userId] = 0;

@@ -7,11 +7,11 @@ let times = 0;
 request(starWarsUri, function (_err, _res, body) {
   body = JSON.parse(body).results;
 
-  for (let i = 0; i < body.length; ++i) {
-    const characters = body[i].characters;
+  for (let p = 0; p < body.length; ++p) {
+    const characters = body[p].characters;
 
-    for (let j = 0; j < characters.length; ++j) {
-      const character = characters[j];
+    for (let q = 0; q < characters.length; ++q) {
+      const character = characters[q];
       const characterId = character.split('/')[5];
 
       if (characterId === '18') {
